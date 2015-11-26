@@ -9,7 +9,7 @@ function single_element(arr) {
 		}
 	}
 	for(var i=0;i<temp.length;i++){
-		if (temp.indexOf(temp[i]) < 0) 
+		if (temp.indexOf(temp[i]) === temp.lastIndexOf(temp[i])) 
 			result.push(temp[i]);
     }  
 	return result;
